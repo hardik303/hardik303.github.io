@@ -1,0 +1,1075 @@
+/* ****************************************************************************************************************** */
+/* --- FMD Epic Places ---------------------------------------------------------------------------------------------- */
+/* ****************************************************************************************************************** */
+
+
+/* ****************************************************************************************************************** */
+/* --- Epic Reisen -------------------------------------------------------------------------------------------------- */
+/* ****************************************************************************************************************** */
+
+.ce_fmdep {
+		/*z-index: 1;*/
+}
+
+.ce_fmdeplist {
+		z-index: 1;
+		background-color: var(--ka-bk-color);
+		display: block;
+		padding: 50px 0;
+}
+
+.fmdeplistheader {
+		margin: 50px 0 50px 0;
+		background-color: var(--ka-bk-color);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction:column;
+}
+
+.fmdeplistheader a {
+		text-transform: uppercase;
+		font-family: Montserrat, Arial;
+}
+
+.fmdeplist  {
+		position: relative;
+		margin: 0 0 50px 0;
+		display: flex;
+		flex-direction:row;
+    justify-content: space-between;
+    align-items: flex-start;
+		z-index: 1;
+		background-color: var(--ka-bk-color);
+}
+
+.fmdeplist .flexcontainer {
+		position: relative;
+		display: flex;
+		flex-direction:row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.fmdeplist section.epicplace {
+		display: flex;
+		flex-direction:column;
+		width: calc(33.3% - 15px);
+		border-bottom: 1px solid #222;
+		min-height: 100px;
+		margin-bottom: 25px;
+}
+
+.fmdeplist section.epicplace.empty {
+		border-bottom: 0px solid #222;
+}
+
+.fmdeplist section.epicplace figure  {
+		position: relative;
+}
+.fmdeplist section.epicplace figure img {
+		width:100%;
+		height:100%;
+		object-fit: cover;
+}
+.fmdeplist section.epicplace figure a {
+		display: block;
+		font-size: 1px;
+		line-height: 1px;
+}
+
+.fmdeplist section.epicplace figure .kontinent {
+		position: absolute;
+		left: 0;
+		bottom: 0px;
+		display: block;
+		pointer-events: none;
+		padding: 5px 15px;
+		background-color: rgb(172, 94,12, 0.7);
+		font-family: Montserrat, Arial;
+		font-size: 12px;
+		color: #fff;
+		text-transform: uppercase;
+}
+
+.fmdeplist section.epicplace div.keywords {
+		margin: 10px 0 10px 0;
+		color:var(--ka-bk-orange);
+		font-size:14px;
+		font-weight: 600;
+		font-family: Montserrat;
+		text-transform: uppercase;
+}
+.fmdeplist section.epicplace div.title2 {
+		font-size: 16px;
+		line-height: 20px;
+		margin: 0  0 20px 0;
+		font-weight: 600;
+}
+.fmdeplist section.epicplace div.title {
+		font-size: 36px;
+		line-height:40px;
+		font-weight: 600;
+		margin: 20px 0 10px 0;
+
+		font-family:var(--ka-hx-font-family);
+    font-weight:var(--ka-hx-font-weight);
+    letter-spacing:var(--ka-hx-letter-spacing);
+}
+.fmdeplist section.epicplace div.text {
+
+}
+.fmdeplist section.epicplace div.link {
+		margin: 20px 0 20px 0;
+}
+.fmdeplist section.epicplace div.link a {
+		display: inline-block;
+		font-size: 12px;
+		color: #ffffff;
+		font-weight: 600;
+		letter-spacing: 0.1em;
+		text-transform: uppercase;
+		font-family: Montserrat, Arial;
+		margin-top: 30px;
+		padding: 3px 20px 3px 20px;
+		border: 1px solid var(--ka-bk-black);
+		background-color: var(--ka-bk-black);
+
+}
+
+.fmdeplist section.epicplace div.link a:hover {
+		background-color: #fff;
+		border: 1px solid var(--ka-bk-black);
+		color: var(--ka-bk-black);
+		text-decoration: none;
+}
+
+/* ****************************************************************************************************************** */
+/* --- Epic Places -------------------------------------------------------------------------------------------------- */
+/* ****************************************************************************************************************** */
+
+.fmdep  {
+		display: block;
+		position: relative;
+		/*min-height: 1000px;*/
+}
+
+.fmdep .fmdepinside {
+		/*
+		width: 100%;
+		max-width: 1200px;
+		margin: 0 auto;
+		*/
+}
+
+.fmdep .tripheader {
+		position: relative;
+		margin: 50px 0 0 0;
+		background-color: #fff;
+}
+.fmdep .tripheader,
+.fmdep .tripheader .thinside {
+		font-size: 1px;
+		line-height: 1px;
+}
+
+.fmdep .tripheader .thinside {
+		display: flex;
+		flex-direction:column;
+		justify-content: center;
+		align-items: center;
+}
+
+.fmdep .tripheader .thinside > * {
+		font-size: var(--ka-font-size);
+		line-height: var(--ka-line-height);
+}
+
+.fmdep .tripheader .thinside .headervideo {
+		position: relative;
+		width: 100%;
+		background: #000;
+		max-height: calc(100vh - 78px) !important;
+}
+.fmdep .tripheader .thinside .headervideo  .prev-video-container,
+.fmdep .tripheader .thinside .headervideo  .prev-video-container * {
+		font-size:1px;
+		line-height:1px;
+}
+.fmdep .tripheader .thinside .headervideo video {
+		position: relative;
+		width: 100%;
+}
+
+.fmdep .tripheader .headervideo .videobtn {
+		position: absolute;
+		top: 70%;
+		left: calc(50% - 50px);
+		z-index: +1;
+
+		margin: 0px;
+    padding: 5px 30px 5px 30px;
+
+		display: inline-block;
+		color:var(--ka-font-orange);
+		font-size: 14px;
+		text-transform: uppercase;
+		text-align: center;
+		cursor: pointer;
+		padding: 10px 25px;
+		font-family: Montserrat, Arial;
+		font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+		color:#ffffff;
+
+		border: 2px solid var(--ka-bk-black);
+    background-color: var(--ka-bk-black);
+}
+
+.fmdep .tripheader .headervideo .videobtn.disable {
+		display: none;
+}
+
+.fmdep .tripheader .headervideo .videobtn:hover {
+    background-color: #fff;
+    border: 2px solid var(--ka-bk-black);
+    color: var(--ka-bk-black);
+}
+
+.fmdep .tripheader .thinside .headervideo .headline {
+		position: absolute;
+		top: 40%;
+		left:50%;
+		transform:translate(-50%, 0);
+}
+
+.fmdep .tripheader .thinside .gradient {
+		position: absolute;
+		top:auto;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		min-height: 300px;
+		margin: 0;
+		/*background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,1));*/
+		/*background: linear-gradient(rgba(53,63,58,0.0), rgba(53,63,58,1));*/
+}
+
+.fmdep .tripheader .thinside .fixedblock,
+.fmdep .tripheader .thinside .textblock {
+		position: relative;
+		width: 100%;
+		min-height: 400px;
+		margin-top: 0;
+		display: flex;
+		flex-direction:column;
+		justify-content: center;
+		align-items: center;
+		/*background: rgba(0,0,0,1);*/
+		background: rgba(53,63,58,1);
+}
+
+body.japaniw .fmdep .tripheader .thinside .fixedblock,
+body.japaniw .fmdep .tripheader .thinside .textblock {
+		background: var(--ka-bk-japaniw);
+}
+body.japanis .fmdep .tripheader .thinside .fixedblock,
+body.japanis .fmdep .tripheader .thinside .textblock {
+		background: var(--ka-bk-japanis);
+}
+body.utah .fmdep .tripheader .thinside .fixedblock,
+body.utah .fmdep .tripheader .thinside .textblock {
+		background: var(--ka-bk-utah);
+}
+body.uganda .fmdep .tripheader .thinside .fixedblock,
+body.uganda .fmdep .tripheader .thinside .textblock {
+		background: var(--ka-bk-uganda);
+}
+body.hongkong .fmdep .tripheader .thinside .fixedblock,
+body.hongkong .fmdep .tripheader .thinside .textblock {
+		background: var(--ka-bk-hongkong);
+}
+body.usedom .fmdep .tripheader .thinside .fixedblock,
+body.usedom .fmdep .tripheader .thinside .textblock {
+		background: var(--ka-bk-usedom);
+}
+
+.fmdep .tripheader .thinside .fixedblock {
+		position: fixed;
+		top: 95px;
+		left: 0;
+		min-height: 20px;
+		z-index:952;
+}
+.fmdep .tripheader .thinside .fixedblock h2 {
+		font-family: Montserrat, Arial;
+		font-size: 16px;
+		line-height: 16px;
+		text-transform: uppercase;
+		font-weight: 600;
+		margin: 10px 0 10px 0;
+}
+
+.fmdep .tripheader .textblock .text {
+		/*
+		position: absolute;
+		top: auto;
+		left: 0;
+		bottom: 0;
+		*/
+		display: flex;
+		flex-direction: column;
+		padding: 150px 10% 150px 10%;
+		width: 80%;
+		max-width:1000px;
+		text-align: center;
+		align-items: center;
+}
+
+.fmdep .tripheader .thinside .fixedblock .text {
+		padding: 10px 10% 5px 10%;
+}
+
+.fmdep .tripheader .text *,
+.fmdep .tripheader section.thinside .title,
+.fmdep .tripheader section.thinside .title2 {
+		color:#fff;
+}
+
+.fmdep .tripheader section.thinside .title {
+		margin-bottom: 20px;
+}
+
+
+
+.fmdep .tripheader .inside video {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+}
+
+
+.fmdep .tripheader .thinside.scrolldown .headervideo {
+		display:none;
+}
+
+.fmdep .tripheader .thinside.scrolldown .textblock {
+		position: fixed;
+		margin-top: 120px;
+		min-height: 180px;
+}
+.fmdep .tripheader .thinside.scrolldown .text {
+		padding: 20px 10% 20px 10%;
+}
+
+.fmdep .extlink {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	padding: 20px 0 0 0;
+}
+.fmdep .extlink.extlink2 {
+	padding: 0 0 40px 0;
+}
+
+.fmdep .extlink * {
+	color: #fff;
+}
+
+.fmdep .extlink a {
+	display: inline-block;
+  color: #ffffff;
+  font-weight: 600 !important;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-top: 10px;
+  padding: 5px 30px 5px 30px;
+  font-size: 14px;
+  font-family: Montserrat, Arial;
+  border: 1px solid var(--ka-bk-black);
+  background-color: var(--ka-bk-black);
+}
+.fmdep .extlink a:hover {
+	background-color: #fff;
+	border: 1px solid var(--ka-bk-black);
+	color: var(--ka-bk-black);
+	text-decoration: none;
+}
+
+.fmdep .trip {
+		position: relative;
+		width: 100%;
+		height: 100%;
+		/*z-index: 2;*/
+}
+
+.fmdep .trip .triplist {
+		position: relative;
+		width: 100%;
+		/*max-width: 1600px;*/
+		margin: 0 auto;
+		align-items: left;
+		z-index: +1;
+}
+
+.fmdep .trip .triplist .left {
+		/*
+		position: absolute;
+		top: 0;
+		left: 0;
+		*/
+		width: calc(50% - 200px);
+		padding: 0 100px;
+		/*max-width: 800px;*/
+		margin: 0 auto 0 0px;
+		/*background-color: rgb(255,255,255,0.85);*/
+
+}
+
+.fmdep .trip .triplist .left * {
+		/*color: #fff !important;*/
+		font-weight:300;
+}
+
+
+.fmdep .trip section.epicplace {
+		position: relative;
+		width: 100%;
+		display: inline-block;
+		margin: 50px 0 50px 0;
+
+}
+
+.fmdep section.epicplace .textblock {
+		position:relative;
+		max-width: 800px;
+		margin: 0 0 10px 0px;
+}
+
+.fmdep section.epicplace .textblock .line1 {
+		width:100%;
+		display: flex;
+		flex-direction:row;
+		justify-content: space-between;
+}
+.fmdep section.epicplace .textblock .line1 .textleft {
+		width:64%;
+}
+.fmdep section.epicplace .textblock .line1 .sponsor {
+		width:31%;
+}
+
+.fmdep section.epicplace .textblock .line2 {
+		width:100%;
+		margin: 20px 0 0 0;
+}
+
+.fmdep .trip section.epicplace .text {
+
+
+
+}
+
+.fmdep section.epicplace .keywords {
+		font-family: Montserrat, Arial;
+		margin-top:10px;
+		font-size:14px;
+		line-height:18px;
+		font-weight:400;
+		color:var(--ka-font-orange);
+		text-transform:uppercase;
+		letter-spacing:0em;
+}
+
+.fmdep section.epicplace h4.title2 {
+		text-transform: uppercase;
+		font-weight: 600;
+		font-family: Montserrat, Arial;
+		font-size: 14px;
+		line-height: 18px;
+		font-weight: 600;
+		color: var(--ka-font-orange);
+}
+
+.fmdep section.epicplace .title {
+		margin:15px 0 15px 0;
+		font-size:44px;
+		line-height:50px;
+		color:#000000;
+		font-weight:400;
+		letter-spacing: 0em;
+
+		font-family:var(--ka-hx-font-family);
+    font-weight:var(--ka-hx-font-weight);
+    letter-spacing:var(--ka-hx-letter-spacing);
+
+}
+
+.fmdep section.epicplace .text1 {
+
+}
+
+.fmdep section.epicplace .textblock,
+.fmdep section.epicplace .title,
+.fmdep section.epicplace h4.title2 {
+		color: #fff;
+}
+
+
+.fmdep section.epicplace .icon {
+		position: absolute;
+		top: 0;
+		right: 0;
+}
+
+.fmdep .mapblock,
+.fmdep .images {
+		position:relative;
+		width:100%;
+
+}
+.fmdep section.epicplace .images ul {
+		width:100%;
+		margin:20px 0;
+		padding:0;
+
+}
+.fmdep section.epicplace .images ul li {
+		width:calc(50% - 10px);
+		float:left;
+		margin:0 0 20px 0;
+		padding:0;
+		list-style-type:none;
+}
+.fmdep section.epicplace .images ul li.item0,
+.fmdep section.epicplace .images ul li.item3 {
+		width:100%;
+}
+.fmdep section.epicplace .images ul li.item1 {
+		margin-right:10px;
+}
+.fmdep section.epicplace .images ul li.item2 {
+		margin-left:10px;
+}
+
+.fmdep section.epicplace .links {
+		display:block;
+		clear: both;
+		margin:0px 0 40px 0;
+}
+
+.fmdep section.epicplace .links a {
+		display: inline-block;
+		color:#ffffff;
+		font-weight: 600 !important;
+		letter-spacing: 0.1em;
+		text-transform: uppercase;
+		margin-top: 20px;
+		padding: 5px 30px 5px 30px;
+		font-size:14px;
+		font-family: Montserrat, Arial;
+		border: 1px solid var(--ka-bk-black);
+		background-color: var(--ka-bk-black);
+}
+
+.fmdep section.epicplace .links a:hover {
+		background-color: #fff;
+		border: 1px solid var(--ka-bk-black);
+		color: var(--ka-bk-black);
+		text-decoration: none;
+}
+
+/* ****************************************************************************************************************** */
+/* --- Epic Places MAP ---------------------------------------------------------------------------------------------- */
+/* ****************************************************************************************************************** */
+
+.fmdep #mapid { height: 280px; }
+
+.fmdep .trip .map {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		z-index:-1;
+}
+.fmdep .trip .map .mapinside {
+		width: 100%;
+		height: 100%;
+}
+.fmdep .trip .map img {
+		width: 100%;
+		height: 100%;
+		opacity: 0.3;
+		z-index:-11;
+		display: none;
+}
+
+.fmdep .trip div#tripcanvas {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		z-index:-1;
+}
+
+.fmdep .trip canvas#trip {
+		position: absolute;
+		top: 0;
+		left: 0;
+		background-color:rgb(255,0,0,0.1);
+		/*
+		width: 100%;
+		height: 100%;
+		z-index:-1;
+		*/
+}
+
+/*
+.fmdep #mapid {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		z-index:-1;
+}
+*/
+
+.fmdep #mapid {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100vw;
+		height: 100vh;
+		z-index:-1;
+}
+
+.fmdep #mapid .leaflet-tile-pane {
+		/*
+		-webkit-filter: grayscale(100%);
+		filter: grayscale(100%);
+		*/
+}
+
+.fmdep #mapid .leaflet-control-container {
+		display: none;
+}
+
+/*
+.leaflet-tooltip-left:before {
+    right: 0;
+    margin-right: -12px;
+    border-left-color: rgba(0, 0, 0, 0.4);
+}
+.leaflet-tooltip-right:before {
+    left: 0;
+    margin-left: -12px;
+    border-right-color: rgba(0, 0, 0, 0.4);
+    }
+.leaflet-tooltip-own,
+.leaflet-popup-tip {
+    position: absolute;
+    padding: 4px;
+    background-color: rgba(0, 0, 0, 0.4);
+    border: 0px solid #000;
+    color: #000;
+    white-space: nowrap;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    pointer-events: none;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.4);
+}
+*/
+
+.css-icon {
+		position: relative;
+		display: flex;
+		align-items:center;
+    justify-content:center;
+		height: 8px;
+		width: 8px;
+		border-radius: 8px;
+		background-color: #000 !important;
+}
+
+.gps_ring {
+		position: absolute;
+		top: -7px;
+		left: -6px;
+    border: 3px solid rgba(220,120,15,0.5);
+    -webkit-border-radius: 30px;
+    height: 18px;
+    width: 18px;
+		background-color: #dc780f !important;
+    -webkit-animation: pulsate 1500ms ease-out;
+    -webkit-animation-iteration-count: infinite;
+    opacity: 0.0
+}
+
+.css-icon:nth-child(2n) .gps_ring {
+    animation-delay:.3s;
+    -webkit-animation-delay:.3s
+}
+.css-icon:nth-child(3n) .gps_ring {
+    animation-delay:.6s;
+    -webkit-animation-delay:.6s
+}
+.css-icon:nth-child(4n) .gps_ring {
+    animation-delay:.8s;
+    -webkit-animation-delay:.8s
+}
+
+
+@-webkit-keyframes pulsate {
+        0% {-webkit-transform: scale(0.1, 0.1); opacity: 0.0;}
+        50% {opacity: 1.0;}
+        100% {-webkit-transform: scale(2, 2); opacity: 0.0;}
+}
+
+
+
+
+.leaflet-popup-tip {
+    background: rgba(0, 0, 0, 0) !important;
+    box-shadow: none !important;
+}
+.leaflet-tooltip-top:before,
+.leaflet-tooltip-bottom:before,
+.leaflet-tooltip-left:before,
+.leaflet-tooltip-right:before {
+    border: none !important;
+}
+.leaflet-popup-content-wrapper {
+    background: rgba(0, 0, 0, 0) !important;
+    border: none !important;
+    font-size: 20px;
+    box-shadow: none !important;
+}
+.popup {
+    background: rgba(0, 0, 0, 0) !important;
+    border: none !important;
+    font-size: 20px;
+    box-shadow: none !important;
+}
+
+.leaflet-tooltip.class-tooltip {
+	  background: rgba(0,0,0,0.005);
+	  border: 0px solid #000;
+		color: #fff;
+		font-size: 18px;
+		font-family: var(--ka-hx-font-family);
+		letter-spacing:0.1em;
+		text-transform: uppercase;
+		box-shadow: 0 0px 0px rgba(0,0,0,0.004);
+}
+
+
+.leaflet-tooltip-left.class-tooltip::before {
+  	border-left-color: cyan;
+}
+
+.leaflet-tooltip-right.class-tooltip::before {
+  	border-right-color: cyan;
+}
+
+
+/* ****************************************************************************************************************** */
+/* --- Epic Places MAP WorldWide Startseite ------------------------------------------------------------------------- */
+/* ****************************************************************************************************************** */
+
+.fmdepmap {
+		position: relative;
+		width: 100%;
+		margin:50px 0;
+		display: block;
+}
+
+.fmdepmap .mapcanvas {
+		position: relative;
+		margin: 175px auto 125px auto;
+		max-width: calc(100% - 0px);
+		height: 100%;
+		display: block;
+}
+
+.fmdepmap .mapcanvas .scripple {
+		position: absolute;
+		left: 0px;
+		top: 0px;
+		width: 100%;
+		transform: translate(0, -45%);
+		z-index: +1;
+		pointer-events: none;
+		/*border: 1px solid #f00;*/
+}
+
+.fmdepmap .mapcanvas .scripple.scripplebottom {
+		top: auto;
+		bottom: 0px;
+		transform: translate(0, +15%);
+}
+
+.fmdepmap .mapcanvas #mapid {
+		width: 100%;
+		height: 850px;
+		z-index:0;
+}
+
+.fmdepmap .map {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		z-index:0;
+}
+
+.fmdepmap #mapid .leaflet-control-container {
+		/*display: none;*/
+}
+
+
+div.fmdepmap .leaflet-tooltip.class-tooltip {
+	  background: rgba(0,0,0,0.01) !important;
+	  border: 0px solid #000;
+		/*color: #ac5e0c;*/
+
+		font-size: 14px;
+		font-family: Montserrat, Arial;
+		letter-spacing:0.1em;
+		text-transform: uppercase;
+		font-weight: 600;
+		box-shadow: 0 0px 0px rgba(0,0,0,0.01) !important;
+
+		color: #000;
+		font-size: 18px;
+		font-family: var(--ka-hx-font-family);
+}
+
+
+div.fmdepmap #mapid .leaflet-popup {
+	  width:400px !important;
+		/*
+	  height:400px !important;
+		min-width:400px !important;
+	  min-height:400px !important;
+		max-width:400px !important;
+	  max-height:400px !important;
+		*/
+		margin:0;
+		padding: 0;
+}
+
+div.fmdepmap #mapid .leaflet-popup-content {
+		line-height: 1px;
+		margin: 0;
+		width: 100%;
+		height: 100%;
+}
+
+div.fmdepmap #mapid .leaflet-popup div.content {
+		position: relative;
+		margin: 0;
+		width: 100%;
+		height: 100%;
+}
+
+div.fmdepmap #mapid .leaflet-popup div.content img {
+		width: 100%;
+		margin: 0;
+		padding: 0;
+}
+
+
+div.fmdepmap #mapid .leaflet-popup div.content div.text {
+		margin: 0;
+		width:calc(100% - 20px);
+		padding:10px 10px;
+		background-color:rgba(255,255,255,0.8);
+		/*color:#ac5e0c;*/
+		color:#000;
+		font-family: Montserrat, Arial;
+		text-transform: uppercase;
+		font-size: 14px;
+		font-weight: 600;
+		line-height: 16px;
+}
+
+/* ****************************************************************************************************************** */
+/* --- max-width: 2000px --------------------------------------------------------------------------------------------- */
+/* ****************************************************************************************************************** */
+
+@media only screen and (max-width: 2010px) {
+
+	.fmdeplist {
+			margin: 0px auto 50px auto;
+			max-width: calc(100% - 60px);
+	}
+
+}
+
+/* ****************************************************************************************************************** */
+/* --- max-width: 1200px --------------------------------------------------------------------------------------------- */
+/* ****************************************************************************************************************** */
+
+@media only screen and (max-width: 1210px) {
+
+	.fmdeplist,
+	.fmdep .trip {
+			margin: 0 auto;
+			max-width: calc(100% - 20px);
+	}
+
+	.fmdep section.epicplace .title {
+			font-size: 32px;
+			line-height: 36px;
+	}
+
+	.fmdep .trip .triplist .left {
+			width: calc(50% - 100px);
+			padding: 0 50px;
+	}
+
+}
+
+
+
+/* ****************************************************************************************************************** */
+/* --- max-width: 850px --------------------------------------------------------------------------------------------- */
+/* ****************************************************************************************************************** */
+
+@media only screen and (max-width: 850px) {
+
+	.fmdep .trip .triplist .left {
+			width: calc(50% - 40px);
+			padding: 0 20px;
+	}
+
+	.fmdeplist section.epicplace {
+			width: 48%;
+	}
+
+	.fmdep .trip section.epicplace {
+    	margin: 30px 0 30px 0;
+	}
+
+	.fmdep .tripheader .thinside .gradient {
+			min-height: 100px;
+	}
+
+	.fmdep .tripheader .textblock .text {
+			padding: 50px 10% 50px 10%;
+	}
+
+	.fmdepmap .mapcanvas {
+			margin: 100px auto 40px auto;
+	}
+
+	.fmdepmap .mapcanvas #mapid {
+			height: 600px;
+	}
+
+}
+
+
+/* ****************************************************************************************************************** */
+/* --- max-width: 600px --------------------------------------------------------------------------------------------- */
+/* ****************************************************************************************************************** */
+
+@media only screen and (max-width: 600px) {
+
+	.fmdeplist  {
+			display: block;
+	}
+
+	.fmdeplist section.epicplace {
+			width: 100%;
+			display: block;
+			clear: both;
+	}
+
+	.fmdep .trip .triplist .left {
+			width: calc(100% - 40px);
+			/*background-color: rgb(255,255,255,0.75);*/
+	}
+
+
+	.fmdep section.epicplace {
+			width:100%;
+	}
+
+	.fmdep .tripheader .headervideo .videobtn {
+			padding: 5px 20px;
+	}
+
+	.fmdep .tripheader .thinside .gradient {
+			min-height: 10px;
+	}
+
+	.fmdep .tripheader .textblock .text {
+			padding: 50px 10% 50px 10%;
+	}
+
+	.fmdep section.epicplace .images ul li,
+	.fmdep section.epicplace .images ul li.item0,
+	.fmdep section.epicplace .images ul li.item1,
+	.fmdep section.epicplace .images ul li.item2 {
+			width:100%;
+			float:none;
+			margin:0 0 20px 0;
+	}
+
+	.fmdep .trip .triplist .left {
+
+	}
+
+	.fmdepmap {
+			display:none;
+	}
+
+	.fmdep section.epicplace .textblock .line1 .textleft {
+			width:80%;
+	}
+
+	/*
+	.fmdep .tripheader,
+	.fmdep .tripheader .thinside,
+	.fmdep .tripheader .thinside .headervideo,
+	*/
+	.fmdep .tripheader .thinside .headervideo .prev-video-container {
+			min-height: calc(66vh - 0px) !important;
+			max-height: calc(66vh - 0px) !important;
+	}
+
+	.fmdep .tripheader .thinside .headervideo .prev-video-container video {
+			/*
+			height: 100%;
+			min-height: 100%;
+			max-height: 100%;
+			width: auto;
+			min-width: 100%;
+			max-width: 500%;
+			object-fit: contain;
+			*/
+
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			min-height: calc(66vh - 0px) !important;
+			max-height: calc(66vh - 0px) !important;
+	}
+
+	.fmdep .tripheader .thinside .headervideo .headline {
+			text-align: center;
+	}
+
+
+}

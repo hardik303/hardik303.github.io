@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>EPIC PLACES - Exclusive trips bookable as NFT - Epic Places</title>
+<base href="https://epic-places.com/">
+<meta name="robots" content="index,follow">
+<meta name="description" content="Exciting itineraries developed by Germany's leading content creators and influencers for the tourism industry. Find some of the most picturesque locations in the most epic places.">
+<meta name="generator" content="Contao Open Source CMS">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<link rel="stylesheet" href="bundles/kafmdep/ka_fmdep.css?v=2b7fc7aa"><link rel="stylesheet" href="assets/css/layout.min.css,responsive.min.css,reset.min.css,mobile-menu.min....-c614fe1d.css"><script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>window.jQuery||document.write('<script src="assets/jquery/js/jquery.min.js">\x3C/script>')</script>
+<script src="assets/js/mobile-menu.jquery.min.js-7605ba0e.js"></script>
+<!--[if lt IE 9]><script src="assets/html5shiv/js/html5shiv-printshiv.min.js"></script><![endif]-->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+crossorigin=""/>
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
+<link rel="stylesheet" type="text/css" href="https://unpkg.com/swiper/swiper.min.css" />
+</head>
+<body id="top" class="mac chrome blink ch108 home" itemscope itemtype="http://schema.org/WebPage">
+<div id="wrapper">
+<header id="header">
+<div class="inside">
+<div id="HeaderLogo">
+<div class="image">
+<a href=""><img src="files/intern/header/fmd-epic-places-logo.svg" alt="Epic Places - Filmemacher Deutschland - FMD-Productions" /></a>
+</div>
+<div class="text">FMD ON TOUR</div>
+</div>
+<div class="background"></div>
+<!-- indexer::stop -->
+<nav class="mod_navigation block" id="mainnav" itemscope itemtype="http://schema.org/SiteNavigationElement">
+<a href="#skipNavigation13" class="invisible">Skip navigation</a>
+<ul class="level_1">
+<li class="active home first"><strong class="active home first" itemprop="name">Home</strong></li>
+<li class="submenu sibling"><a href="epic-places.html" title="EPIC PLACES" class="submenu sibling" aria-haspopup="true" itemprop="url"><span itemprop="name">Epic Places</span></a>
+<ul class="level_2">
+<li class="usedom first"><a href="usedom.html" title="Travel the German Island of Usedom" class="usedom first" itemprop="url"><span itemprop="name">Usedom</span></a></li>
+<li class="japaniw"><a href="japan-in-winter.html" title="Travel Japan in Winter" class="japaniw" itemprop="url"><span itemprop="name">Japan in winter</span></a></li>
+<li class="japanis"><a href="japan.html" title="Japan in summer" class="japanis" itemprop="url"><span itemprop="name">Japan in summer</span></a></li>
+<li class="uganda"><a href="uganda.html" title="Traveling Uganda | The most epic places" class="uganda" itemprop="url"><span itemprop="name">Uganda</span></a></li>
+<li class="utah"><a href="utah.html" title="Utah&#039;s most epic places" class="utah" itemprop="url"><span itemprop="name">Utah</span></a></li>
+<li class="hongkong last"><a href="hong-kong.html" title="Hong Kong&#039;s most epic places" class="hongkong last" itemprop="url"><span itemprop="name">Hong Kong</span></a></li>
+</ul>
+</li>
+<li class="sibling"><a href="digital-wallet.html" title="Digital Wallet" class="sibling" itemprop="url"><span itemprop="name">Digital Wallet</span></a></li>
+<li class="sibling last"><a href="contact.html" title="Contact" class="sibling last" itemprop="url"><span itemprop="name">Contact</span></a></li>
+</ul>
+<a id="skipNavigation13" class="invisible">&nbsp;</a>
+</nav>
+<!-- indexer::continue -->
+<!-- indexer::stop -->
+<div class="mod_mobile_menu block">
+<div id="mobile-menu-15-trigger" class="mobile_menu_trigger">
+<div id="navmobil"><i class="fa fa-bars" aria-hidden="true"></i><img src="files/intern/header/fmd-menu.svg" alt="Epic Places"/></div></div>
+<div id="mobile-menu-15" class="mobile_menu">
+<div class="inner">
+<!-- indexer::stop -->
+<nav class="mod_navigation block" id="mmenu" itemscope itemtype="http://schema.org/SiteNavigationElement">
+<a href="#skipNavigation14" class="invisible">Skip navigation</a>
+<ul class="level_1">
+<li class="active home first"><strong class="active home first" itemprop="name">Home</strong></li>
+<li class="submenu sibling"><a href="epic-places.html" title="EPIC PLACES" class="submenu sibling" aria-haspopup="true" itemprop="url"><span itemprop="name">Epic Places</span></a>
+<ul class="level_2">
+<li class="usedom first"><a href="usedom.html" title="Travel the German Island of Usedom" class="usedom first" itemprop="url"><span itemprop="name">Usedom</span></a></li>
+<li class="japaniw"><a href="japan-in-winter.html" title="Travel Japan in Winter" class="japaniw" itemprop="url"><span itemprop="name">Japan in winter</span></a></li>
+<li class="japanis"><a href="japan.html" title="Japan in summer" class="japanis" itemprop="url"><span itemprop="name">Japan in summer</span></a></li>
+<li class="uganda"><a href="uganda.html" title="Traveling Uganda | The most epic places" class="uganda" itemprop="url"><span itemprop="name">Uganda</span></a></li>
+<li class="utah"><a href="utah.html" title="Utah&#039;s most epic places" class="utah" itemprop="url"><span itemprop="name">Utah</span></a></li>
+<li class="hongkong last"><a href="hong-kong.html" title="Hong Kong&#039;s most epic places" class="hongkong last" itemprop="url"><span itemprop="name">Hong Kong</span></a></li>
+</ul>
+</li>
+<li class="sibling"><a href="digital-wallet.html" title="Digital Wallet" class="sibling" itemprop="url"><span itemprop="name">Digital Wallet</span></a></li>
+<li class="sibling last"><a href="contact.html" title="Contact" class="sibling last" itemprop="url"><span itemprop="name">Contact</span></a></li>
+</ul>
+<a id="skipNavigation14" class="invisible">&nbsp;</a>
+</nav>
+<!-- indexer::continue -->
+<div class="contact">
+<div>+49 (0) 173 27 26 275</div>
+<div><a href="mailto:hello@fmd-productions.com">hello@fmd-productions.com</a></div>
+</div>
+<div class="socials">
+<h4>Follow us</h4>
+<div class="links">
+<a href="https://www.facebook.com/filmemacherdeutschland" target="_blank" rel="noopener">
+<img src="files/intern/socials/fmd-facebook.svg"
+onmouseover="this.src='files/intern/socials/fmd-facebook-hover.svg'"
+onmouseout="this.src='files/intern/socials/fmd-facebook.svg'"
+alt="Epic Places - Facebook"/>
+</a>
+<a href="https://www.instagram.com/filmemacherde/" target="_blank" rel="noopener">
+<img src="files/intern/socials/fmd-instagram.svg"
+onmouseover="this.src='files/intern/socials/fmd-instagram-hover.svg'"
+onmouseout="this.src='files/intern/socials/fmd-instagram.svg'"
+alt="Epic Places - Instagram"/>
+</a>
+<a href="https://www.youtube.com/channel/UCXFCaae55tEGLf546iMiP9Q" target="_blank" rel="noopener">
+<img src="files/intern/socials/fmd-youtube.svg"
+onmouseover="this.src='files/intern/socials/fmd-youtube-hover.svg'"
+onmouseout="this.src='files/intern/socials/fmd-youtube.svg'"
+alt="Epic Places - Youtube"/>
+</a>
+</div>
+</div>
+<div class="mobileclose"><a href=""><img src="files/intern/common/fmd-close.svg" alt="Epic Places"/></a></div>    </div>
+</div>
+<script>(function($){$('#mobile-menu-15').mobileMenu({'animation':!0,'animationSpeed':500,'breakPoint':850,'offCanvas':!1,'overlay':!0,'disableNavigation':!1,'parentTogglers':!1,'closeOnLinkClick':!1,'keepInPlace':!1,'position':'right','size':'100','trigger':$('#mobile-menu-15-trigger')})})(jQuery)</script>
+</div>
+<!-- indexer::continue -->
+<div class="socials">
+<div class="links">
+<a href="https://www.facebook.com/filmemacherdeutschland" target="_blank" rel="noopener">
+<img src="files/intern/socials/fmd-facebook.svg"
+onmouseover="this.src='files/intern/socials/fmd-facebook-hover.svg'"
+onmouseout="this.src='files/intern/socials/fmd-facebook.svg'"
+alt="Epic Places - Facebook"/>
+</a>
+<a href="https://www.instagram.com/filmemacherde/" target="_blank" rel="noopener">
+<img src="files/intern/socials/fmd-instagram.svg"
+onmouseover="this.src='files/intern/socials/fmd-instagram-hover.svg'"
+onmouseout="this.src='files/intern/socials/fmd-instagram.svg'"
+alt="Epic Places - Instagram"/>
+</a>
+<a href="https://www.youtube.com/channel/UCXFCaae55tEGLf546iMiP9Q" target="_blank" rel="noopener">
+<img src="files/intern/socials/fmd-youtube.svg"
+onmouseover="this.src='files/intern/socials/fmd-youtube-hover.svg'"
+onmouseout="this.src='files/intern/socials/fmd-youtube.svg'"
+alt="Epic Places - Youtube"/>
+</a>
+</div>
+</div>            </div>
+</header>
+<div id="banner">
+<div class="bannerinside">
+<div id="bannerimage">
+<div class="mod_article first last block" id="article-12">
+<!-- indexer::stop -->
+<div class="ce_player first last block">
+<figure class="video_container">
+<video playsinline  poster="files/image/Video/epic-places-intro-standbild.jpg" autoplay loop muted>
+<source type="video/mp4" src="files/image/Video/EPIC-Places-Header.mp4" title="EPIC-Places-Header.mp4">
+</video>
+</figure>
+</div>
+<!-- indexer::continue -->
+</div>
+</div>
+<div id="bannertext">
+<div class="textinside">
+</div>
+</div>
+<div id="bannersign">
+<div class="signinside">
+</div>
+</div>
+</div>
+</div>
+<div id="container">
+<main id="main">
+<div id="maininside" class="inside">
+<div id="anker"></div>
+<div class="mod_article first block" id="article-173">
+<!-- rsce_ka_startproject.html5 -->
+<section  class="ce_rsce_ka_startproject first startproject flexcontainer column center ce_rsce_ka_startproject first maxheight" style="background-image: url('')">
+<div class="clear"></div>
+<div class="headline">Full flexibility for your next vacation! Exclusive trips bookable as NFT</div>
+<div class="text limit800"><p>Inspired by our years of travel experience as a production studio, we have decided to present you exceptional trips. All destinations have been carefully selected by our wonderful partners and famous content creators. No more headaches if you can&#39;t make the trip after all. All packages can be easily purchased and resold as NFT. For more information on how to purchase NFTs, please visit the Digital Wallet section.</p></div>
+<div class="button"><a title="" href="epic-places.html">Explore</a></div>
+</section>
+<div class="dist100"></div>
+</div>
+<div class="mod_article block" id="article-239">
+<div class="ce_text center first block">
+<div class="ktext"><h1>Choose a destination</h1></div>
+</div>
+<div class="ce_fmdepmap last block">
+<div class="fmdepmap">
+<div class="fmdepmapinside">
+<div class="mapheader">
+</div>
+<div class="mapcanvas">
+<div id="mapid"></div>
+<div class="scripple scrippletop"><img src="/files/image/Skizzen/fmd-epic-places-map-scribble-1.svg" alt="Epic Places - Scriiple"></div>
+<div class="scripple scripplebottom"><img src="/files/image/Skizzen/fmd-epic-places-map-scribble-2.svg" alt="Epic Places - Scriple"></div>
+</div>
+<div class="mapfooter">
+</div>
+</div>
+</div>
+<script src='https://unpkg.com/@turf/turf@6.3.0/turf.min.js'></script>
+<script type="text/javascript">console.log('Script run');var strmapbg='25';var strmaplg='35';var strmapz='2';var maplink='null';var mapbg=parseFloat(strmapbg);var maplg=parseFloat(strmaplg);var mapz=parseFloat(strmapz);mapz=2.5;var flybg=mapbg;var flylg=maplg;var flyz=mapz;var lastflybg=0;var lastflylg=0;var actep=-1;var winwidth=window.innerWidth;var winheight=window.innerHeight;var mousex=null;var mousey=null;let scroll=this.scrollY;var scrollposy=scroll-$('.fmdepmap .mapheader').offset().top;var triplistendy=$('.fmdepmap .mapfooter').offset().top;var lastmousex=100;var lastmousey=100;var lastScrolledLeft=0;var lastScrolledTop=0;var chheader=$(".fmdepmap .mapheader").offset().top-0;var yoffset=350;var flytime=performance.now();var lastflytime=performance.now();console.log('Breitengrad: '+mapbg);console.log('Längengrad: '+maplg);console.log('Zoom: '+mapz);var mymap=L.map('mapid',{zoomControl:!0,zoomSnap:0.1,zoomDelta:0.2,'worldCopyJump':!0}).setView([mapbg,maplg],mapz);mymap.scrollWheelZoom.disable();L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}',{id:'greatbear30/ckm2201kwarcy17p6ro9ai5pp',minZoom:1,maxZoom:10,accessToken:'pk.eyJ1IjoiZ3JlYXRiZWFyMzAiLCJhIjoiY2trdTNoNHI3MHFnMTJwbG1sZWkwMmZxaSJ9.aKGhOWnpHpXX8I0IeyYK4w'}).addTo(mymap);var mapcenter=mymap.getCenter();var mapzoom=mymap.getZoom();var mapboundsw=mymap.getBounds().getSouthWest();var mapboundne=mymap.getBounds().getNorthEast();var mapsize=mymap.getSize();console.log('Real MapZoom: '+mapzoom);var mapwidth=Math.abs(mapboundsw.lng-mapboundne.lng);var mapoffset=0.25;var mapoffsetlng=-mapwidth*mapoffset;var pointoffsetlng=-mapwidth*mapoffset;var TooltipClass={'className':'class-tooltip'}
+var arrplace=JSON.parse('[{"i":0,"title":"Travel Japan in summer","bg":"35.67936597119413","lg":"139.76963042438572","url":"japan.html","mz":null,"ip":"files\/intern\/worldmap\/Pin-Sehenswuerdigkeit.png","ips":"files\/intern\/worldmap\/Pin-Sehenswuerdigkeit.png","img":"files\/image\/trips\/japan1insummer\/teaser\/FMD-Epic-Places-Teaser-Japan-1.jpg"},{"i":1,"title":"Travel Japan in winter","bg":"43.11740960062793","lg":"143.0126994339393","url":"japan-in-winter.html","mz":null,"ip":"\/files\/intern\/worldmap\/Pin-Weltkarte.png","ips":"\/files\/intern\/worldmap\/Pin-Weltkarte.png","img":"files\/image\/trips\/japan2inwinter\/teaser\/FMD-Epic-Places-Teaser-Japan-In-Winter.jpg"},{"i":2,"title":"Travel Utah","bg":"36.14223199084063","lg":"-115.15215880910402","url":"utah.html","mz":null,"ip":"\/files\/intern\/worldmap\/Pin-Weltkarte.png","ips":"\/files\/intern\/worldmap\/Pin-Weltkarte.png","img":"files\/image\/trips\/utah1\/teaser\/FMD-Epic-Places-Teaser-Utah-01.jpg"},{"i":3,"title":"Travel Hong Kong","bg":"22.26782261477584","lg":"113.9412581438381","url":"hong-kong.html","mz":null,"ip":"\/files\/intern\/worldmap\/Pin-Weltkarte.png","ips":"\/files\/intern\/worldmap\/Pin-Weltkarte.png","img":"files\/image\/trips\/hongkong\/teaser\/FMD-Epic-Places-Teaser-Hong-Kong.jpg"},{"i":4,"title":"Travel Usedom","bg":"53.988824","lg":"13.9060319","url":"usedom.html","mz":null,"ip":"\/files\/intern\/worldmap\/Pin-Weltkarte.png","ips":"\/files\/intern\/worldmap\/Pin-Weltkarte.png","img":"files\/image\/trips\/japan2inwinter\/teaser\/Blick auf die Ahlbecker Seebr\u00fccke-1 Kopie.jpg"},{"i":5,"title":"Travel Uganda","bg":"0.940699","lg":"31.8626984","url":"uganda.html","mz":null,"ip":"\/files\/intern\/worldmap\/Pin-Weltkarte.png","ips":"\/files\/intern\/worldmap\/Pin-Weltkarte.png","img":"files\/image\/trips\/uganda1\/teaser\/FMD-Epic-Places-Teaser-Uganda-Jeep.jpg"}]');console.log(arrplace);var arrlatlngs=[];var arrlatlngsvisit=[];var arrmarker=[];var arrpopup=[];var markers=new L.FeatureGroup();var FMDMarker=L.Marker.extend({bindPopup:function(htmlContent,options){if(options&&options.showOnMouseOver){L.Marker.prototype.bindPopup.apply(this,[htmlContent,options]);this.on("mouseover",function(e){var target=e.originalEvent.fromElement||e.originalEvent.relatedTarget;var parent=this._getParent(target,"leaflet-popup");if(parent==this._popup._container)
+return!0;this.openPopup()},this);this.on("mouseout",function(e){var target=e.originalEvent.toElement||e.originalEvent.relatedTarget;if(this._getParent(target,"leaflet-popup")){L.DomEvent.on(this._popup._container,"mouseout",this._popupMouseOut,this);return!0}
+this.closePopup()},this)}},_popupMouseOut:function(e){L.DomEvent.off(this._popup,"mouseout",this._popupMouseOut,this);var target=e.toElement||e.relatedTarget;if(this._getParent(target,"leaflet-popup"))
+return!0;if(target==this._icon)
+return!0;this.closePopup()},_getParent:function(element,className){var parent=element.parentNode;while(parent!=null){if(parent.className&&L.DomUtil.hasClass(parent,className))
+return parent;parent=parent.parentNode}
+return!1},});var bglast=0.0;var lglast=0.0;console.log('Len arrEP '+arrplace.length);for(i=0;i<arrplace.length;i++){var bg=parseFloat(arrplace[i].bg);var lg=parseFloat(arrplace[i].lg);var id='ep_'+i;var epicplace=document.getElementById(id);console.log(arrplace[i].title+' '+bg+' '+lg+' '+arrplace[i].url);var latlng=L.latLng(bg,lg);var content='<div class="content"><img src="'+arrplace[i].img+'" /><div class="text">'+arrplace[i].title+'</div></div>'
+var popup=L.popup().setLatLng(latlng).setContent(content).openOn(mymap);var epurl=arrplace[i].url;var marker=new FMDMarker(latlng,epurl).bindTooltip(arrplace[i].title,{permanent:!0,direction:'right',offset:[15,0],opacity:1,className:'leaflet-tooltip-own',...TooltipClass},TooltipClass).on('click',markerOnClick);marker.bindPopup(popup,{maxWidth:'400',showOnMouseOver:!0});var epIcon=createIcon('/files/intern/worldmap/Punkt-2.png','/files/intern/worldmap/Punkt-2.png');marker.setIcon(epIcon);L.setOptions(marker,{'url':epurl});markers.addLayer(marker);bglast=bg;lglast=lg}
+mymap.addLayer(markers);mymap.closePopup();function markerOnClick(e){window.location=this.options.url}
+function createIcon(iconurl,shadowurl){var epIconTemp=L.divIcon({iconSize:[12,12],iconAnchor:[12,12],popupAnchor:[0,-35],className:'css-icon',html:'<div class="gps_ring"></div>'});return epIconTemp}
+function onMouseUpdate(e){mousex=e.pageX;mousey=e.pageY-$('.fmdepmap .mapcanvas').offset().top}
+window.addEventListener("load",function(event){});document.addEventListener('mousemove',onMouseUpdate,!1);document.addEventListener('mouseenter',onMouseUpdate,!1)</script>
+<script type="text/javascript">$(document).ready(function(){setPreviewPlayBtn();function setPreviewPlayBtn(){var videobtn=$('.headervideo .videobtn');videobtn.click(function(){var wwitem=$(this).parent();var plvideo=wwitem.find('video');var vsrc=videobtn.attr('type');plvideo.attr('src',vsrc);videobtn.addClass("disable");return!1})}})</script>
+</div>
+</div>
+<div class="mod_article block" id="article-174">
+<div class="boxheadline">
+<div class="flexcontainer">
+<H3 class="left">Explore</H3>
+<img src="files/intern/header/fmd-epic-places-logo.svg" alt="Epic Places by Filmemacher Deutschland"/>
+<H3 class="right">by FMD</H3>
+</div>
+</div>
+<div class="ce_fmdeplist last block">
+<div class="limit2000">
+<!--
+<div>1598</div>
+<div>0</div>
+<div>rsts_default</div>
+-->
+<div class="fmdeplist">
+<div class="flexcontainer inline">
+<section class="epicplace ">
+<figure>
+<a href="japan.html">
+<img src="files/image/trips/japan1insummer/teaser/FMD-Epic-Places-Teaser-Japan-1.jpg" width="800" height="600" alt="" itemprop="image">
+</a>
+<div class="kontinent">Japan / Asia</div>
+</figure>
+<div class="text">
+<div class="keywords">Culture Nature Entertainment</div>
+<div class="title">Travel Japan in summer</div>
+<div class="title2">日本を探索する</div>
+<div class="text1"><p>Follow our production crew to Japan and discover the country in a unique way. In just two weeks, our creatives have explored a large part of the country and captured the most beautiful and impressive highlights for you. Unique pictures and videos were created, as well as a spectacular route. Get inspired for your next visit to Japan!</p></div>
+<div></div>
+</div>
+<div class="link">
+<a href="japan.html">Explore</a>
+</div>
+</section>
+<section class="epicplace ">
+<figure>
+<a href="japan-in-winter.html">
+<img src="files/image/trips/japan2inwinter/teaser/FMD-Epic-Places-Teaser-Japan-In-Winter.jpg" width="800" height="600" alt="" itemprop="image">
+</a>
+<div class="kontinent">Japan / Asia</div>
+</figure>
+<div class="text">
+<div class="keywords">Culture Nature Sport</div>
+<div class="title">Travel Japan in winter</div>
+<div class="title2">冬に日本を旅行する</div>
+<div class="text1"><p>Japan in winter is unlike any other snowy destination you might have experienced before. Be prepared to get overwhelmed by nature - either while skiing in deep, fresh powder or while enjoying the hot springs Takaragawa. Discover the traditional production of Japanese Nikka whiskey and experience the fascinating Japanese culture in Edo Wonderland. We&#39;ll show you the best route through snowy Japan.</p></div>
+<div></div>
+</div>
+<div class="link">
+<a href="japan-in-winter.html">Explore</a>
+</div>
+</section>
+<section class="epicplace ">
+<figure>
+<a href="utah.html">
+<img src="files/image/trips/utah1/teaser/FMD-Epic-Places-Teaser-Utah-01.jpg" width="800" height="600" alt="" itemprop="image">
+</a>
+<div class="kontinent">Utah / America</div>
+</figure>
+<div class="text">
+<div class="keywords">Nature</div>
+<div class="title">Travel Utah</div>
+<div class="title2">The 'Mighty Five' and more...</div>
+<div class="text1"><p>Utah is blessed with some of the most dramatic landscapes that are sure to surprise you. Get inspired by our itinerary which led us from the highest snow-capped peaks to the deepest slot canyons and caverns. Utah's many national parks and a vast expanse of desert, canyons, rocky trails, and metropolitan cities that have a small-town feel will make you feel at home. Whether looking for a family vacation or solo trips, there are many reasons to visit Utah.</p></div>
+<div></div>
+</div>
+<div class="link">
+<a href="utah.html">Explore</a>
+</div>
+</section>
+<section class="epicplace ">
+<figure>
+<a href="hong-kong.html">
+<img src="files/image/trips/hongkong/teaser/FMD-Epic-Places-Teaser-Hong-Kong.jpg" width="800" height="600" alt="" itemprop="image">
+</a>
+<div class="kontinent">China / Hong Kong</div>
+</figure>
+<div class="text">
+<div class="keywords">Attractions</div>
+<div class="title">Travel Hong Kong</div>
+<div class="title2">Breathtaking Landscapes and sights</div>
+<div class="text1"><p>Hong Kong thrives on contrasts. Around seven million inhabitants call the city home. In centuries-old districts, the contrasts between eastern customs and western lifestyle are deliberately lived and cultivated. Gigantic skyscrapers frame incense-filled temples, and futuristic shopping malls sit alongside bustling street markets. Just as diverse as Hong Kong's vibrant culture are its taste experiences. With more than 15,000 restaurants, the city has one of the highest restaurant densities in the world. But Hong Kong has another side to it - just minutes beyond the world-famous skyline, it turns green. About 40 percent of Hong Kong's land is protected.</p></div>
+<div></div>
+</div>
+<div class="link">
+<a href="hong-kong.html">Explore</a>
+</div>
+</section>
+<section class="epicplace ">
+<figure>
+<a href="usedom.html">
+<img src="files/image/trips/japan2inwinter/teaser/Blick%20auf%20die%20Ahlbecker%20Seebr%C3%BCcke-1%20Kopie.jpg" width="800" height="600" alt="" itemprop="image">
+</a>
+<div class="kontinent">Germany / Europe</div>
+</figure>
+<div class="text">
+<div class="keywords">Culture Nature Beaches</div>
+<div class="title">Travel Usedom</div>
+<div class="title2">The sunny island of Germany</div>
+<div class="text1"><p>When the soul needs the open space again... Sand that trickles through the fingers. Wind that blows through your head, waves that take your thoughts on a journey and freedom that flows through your soul with every breath.</p>
+<p>Germany's second largest island with 445 km² will enchant you with its diversity and different facets. The Baltic Sea and the white, up to 100 m wide beach on one side, the idyllic Achterwasser with its bays and harbors on the other side and in between a wide and varied landscape with meadows, forests and countless lakes.</p>
+<p>We have created the perfect route for your stay on Usedom. In a few days you will get to know the most beautiful and impressive highlights of the island. Get inspired for your next trip to the sunny island of Usedom.</p></div>
+<div></div>
+</div>
+<div class="link">
+<a href="usedom.html">Explore</a>
+</div>
+</section>
+<section class="epicplace ">
+<figure>
+<a href="uganda.html">
+<img src="files/image/trips/uganda1/teaser/FMD-Epic-Places-Teaser-Uganda-Jeep.jpg" width="800" height="600" alt="" itemprop="image">
+</a>
+<div class="kontinent">Uganda / Africa</div>
+</figure>
+<div class="text">
+<div class="keywords">Nature Wilderness</div>
+<div class="title">Travel Uganda</div>
+<div class="title2">The pearl of Africa</div>
+<div class="text1"><p>Abundant in wildlife and breathtaking landscapes, Uganda is rich in untapped tourism attractions and free of the over-commercialization found within the borders of some of its neighbors. FMD traveled the whole country in two weeks to create unforgettable memories that will help you create your own once-in-a-lifetime itinerary.</p></div>
+<div></div>
+</div>
+<div class="link">
+<a href="uganda.html">Explore</a>
+</div>
+</section>
+<section class="epicplace empty"></section>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="mod_article boxwhite last block" id="article-13">
+<div class="dist100"></div>
+<h5 class="ce_headline limit1200 center">
+The filmmakers - who are we</h5>
+<div class="ce_text limit1000 center bigtext block">
+<div class="ktext"><h1>Inspired by passion. Driven by results. Innovative solutions. Team of experts.</h1>
+<p>&nbsp;</p></div>
+</div>
+<div class="dist30"></div>
+<div class="ce_text center limit1000 bigtext block">
+<div class="ktext"><p>FMD produces videos and photos with both passion and professionalism. Whether it’s for specific jobs or entire marketing campaigns, for social media or even TV and cinema, whether it’s to the requirements given to us by the customer or concepts that are completely our own. We realize spectacular events and campaigns at exotic destinations all over the world and turn simple productions into fully-fledged media events.</p>
+<p><a title="Visit our website" href="https://fmd-productions.com" target="_blank" rel="noopener">Visit fmd-productions.com</a></p></div>
+</div>
+<div class="dist50"></div>
+<div class="ce_hyperlink center block">
+<figure class="image_container">
+<a href="https://fmd-productions.com/en/" class="hyperlink_img">
+<img src="assets/images/8/fmd-logo-1-7811df01.png" width="70" height="92" alt="" itemprop="image">
+</a>
+</figure>
+</div>
+<div class="dist50"></div>
+</div>
+</div>
+</main>
+</div>
+<footer id="footer">
+<div class="inside">
+<div class="line1">
+<div class="center">
+<div class="text">Sign up for our newsletter about upcoming tours</div>
+<!-- indexer::stop -->
+<div class="mod_subscribe block">
+<form id="tl_subscribe_35" method="post">
+<div class="formbody">
+<input type="hidden" name="FORM_SUBMIT" value="tl_subscribe_35">
+<input type="hidden" name="REQUEST_TOKEN" value="">
+<input type="hidden" name="channels[]" value="1">
+<div class="widget widget-text mandatory">
+<label for="ctrl_email_35" class="invisible">E-mail address</label>
+<input type="email" name="email" id="ctrl_email_35" class="text mandatory" value="" placeholder="E-mail address" required>
+</div>
+<div class="widget widget-captcha mandatory">
+<label for="ctrl_subscribe_35">
+<span class="invisible">Mandatory field </span>Security question<span class="mandatory">*</span>
+</label>
+<input type="text" name="captcha_subscribe_35" id="ctrl_subscribe_35" class="captcha mandatory" value="" aria-describedby="captcha_text_subscribe_35" maxlength="2" required>
+<span id="captcha_text_subscribe_35" class="captcha_text">&#80;&#x6C;&#101;&#x61;&#115;&#x65;&#32;&#x61;&#100;&#x64;&#32;&#x32;&#32;&#x61;&#110;&#x64;&#32;&#x31;&#46;</span>
+<input type="hidden" name="captcha_subscribe_35_hash" value="e5bab3a0e4cb1bb5c1596dd9dea0f87a286587eb8055bb62f648ce38c8c332b9">
+<div style="display:none">
+<label for="ctrl_subscribe_35_hp">Do not fill in this field</label>
+<input type="text" name="captcha_subscribe_35_name" id="ctrl_subscribe_35_hp" value="">
+</div>
+<script>(function(){var e=document.getElementById('ctrl_subscribe_35'),p=e.parentNode,f=p.parentNode;if(f.classList.contains('widget-captcha')||'fieldset'===f.nodeName.toLowerCase()&&1===f.children.length){p=f}
+e.required=!1;p.style.display='none';setTimeout(function(){e.value='3'},5000)})()</script>
+</div>
+<div class="widget widget-submit">
+<button type="submit" class="submit">Subscribe</button>
+</div>
+</div>
+</form>
+</div>
+<!-- indexer::continue -->
+</div>              </div>
+<div class="line2">
+<div class="inside">
+<div class="logo"><img src="files/intern/header/fmd-epic-places-logo.svg" alt="Epic Places - Filmemacher Deutschland - FMD-Productions" /></div>
+<div class="about us">
+<H4>About us</H4>
+<div class="text">At FMD we are a professional production crew for international video and marketing projects. With EPIC PLACES we want to share our most interesting film locations and want to inspire you to visit some of the most scenic spots on our planet. Explore, get inspire and share with us your dream destinations!</div>
+</div>
+<!-- indexer::stop -->
+<nav class="mod_customnav mod_footer_navi block" itemscope itemtype="http://schema.org/SiteNavigationElement">
+<h4>Epic Places</h4>
+<a href="#skipNavigation6" class="invisible">Skip navigation</a>
+<ul class="level_1">
+<li class="usedom first"><a href="usedom.html" title="Travel the German Island of Usedom" class="usedom first" itemprop="url"><span itemprop="name">Usedom</span></a></li>
+<li class="japaniw"><a href="japan-in-winter.html" title="Travel Japan in Winter" class="japaniw" itemprop="url"><span itemprop="name">Japan in winter</span></a></li>
+<li class="japanis"><a href="japan.html" title="Japan in summer" class="japanis" itemprop="url"><span itemprop="name">Japan in summer</span></a></li>
+<li class="uganda"><a href="uganda.html" title="Traveling Uganda | The most epic places" class="uganda" itemprop="url"><span itemprop="name">Uganda</span></a></li>
+<li class="utah"><a href="utah.html" title="Utah&#039;s most epic places" class="utah" itemprop="url"><span itemprop="name">Utah</span></a></li>
+<li class="hongkong last"><a href="hong-kong.html" title="Hong Kong&#039;s most epic places" class="hongkong last" itemprop="url"><span itemprop="name">Hong Kong</span></a></li>
+</ul>
+<a id="skipNavigation6" class="invisible">&nbsp;</a>
+</nav>
+<!-- indexer::continue -->
+<div class="socials">
+<h4>Follow us</h4>
+<div class="links">
+<a href="https://www.facebook.com/filmemacherdeutschland" target="_blank" rel="noopener">
+<img src="files/intern/socials/fmd-facebook.svg"
+onmouseover="this.src='files/intern/socials/fmd-facebook-hover.svg'"
+onmouseout="this.src='files/intern/socials/fmd-facebook.svg'"
+alt="Epic Places - Facebook"/>
+</a>
+<a href="https://www.instagram.com/filmemacherde/" target="_blank" rel="noopener">
+<img src="files/intern/socials/fmd-instagram.svg"
+onmouseover="this.src='files/intern/socials/fmd-instagram-hover.svg'"
+onmouseout="this.src='files/intern/socials/fmd-instagram.svg'"
+alt="Epic Places - Instagram"/>
+</a>
+<a href="https://www.youtube.com/channel/UCXFCaae55tEGLf546iMiP9Q" target="_blank" rel="noopener">
+<img src="files/intern/socials/fmd-youtube.svg"
+onmouseover="this.src='files/intern/socials/fmd-youtube-hover.svg'"
+onmouseout="this.src='files/intern/socials/fmd-youtube.svg'"
+alt="Epic Places - Youtube"/>
+</a>
+</div>
+</div>
+</div>	          	</div>
+<div class="line3">
+<div class="inside">
+<!-- indexer::stop -->
+<nav class="mod_customnav mod_footer_navi block" itemscope itemtype="http://schema.org/SiteNavigationElement">
+<a href="#skipNavigation38" class="invisible">Skip navigation</a>
+<ul class="level_1">
+<li class="first"><a href="datenschutz.html" title="Datenschutz" class="first" itemprop="url"><span itemprop="name">Datenschutz</span></a></li>
+<li><a href="impressum.html" title="Impressum" itemprop="url"><span itemprop="name">Impressum</span></a></li>
+<li class="last"><a href="contact.html" title="Contact" class="last" itemprop="url"><span itemprop="name">Contact</span></a></li>
+</ul>
+<a id="skipNavigation38" class="invisible">&nbsp;</a>
+</nav>
+<!-- indexer::continue -->
+</div>            	</div>
+</div>
+</footer>
+</div>
+<script src="assets/jquery-ui/js/jquery-ui.min.js?v=1.13.1"></script>
+<script>jQuery(function($){$(document).accordion({heightStyle:'content',header:'.toggler',collapsible:!0,create:function(event,ui){ui.header.addClass('active');$('.toggler').attr('tabindex',0)},activate:function(event,ui){ui.newHeader.addClass('active');ui.oldHeader.removeClass('active');$('.toggler').attr('tabindex',0)}})})</script>
+<script src="assets/colorbox/js/colorbox.min.js?v=1.6.6"></script>
+<script>jQuery(function($){$('a[data-lightbox]').map(function(){$(this).colorbox({loop:!1,rel:$(this).attr('data-lightbox'),maxWidth:'95%',maxHeight:'95%',width:'95%',height:'95%'})})})</script>
+<script src="assets/tablesorter/js/tablesorter.min.js?v=2.31.3"></script>
+<script>jQuery(function($){$('.ce_table .sortable').each(function(i,table){var attr=$(table).attr('data-sort-default'),opts={},s;if(attr){s=attr.split('|');opts={sortList:[[s[0],s[1]=='desc'|0]]}}
+$(table).tablesorter(opts)})})</script>
+<script>(function(){if(navigator.cookieEnabled)return;var e=document.querySelectorAll('input[name="REQUEST_TOKEN"]'),t,c,i;for(i=0;i<e.length;i++){c=e[i].parentNode;if('formbody'!==c.className)return;t=document.createElement('p');t.className='error nocookie';t.innerHTML='You will not be able to send this form, because you have disabled cookies in your browser.';c.insertBefore(t,c.firstChild)}})()</script>
+<script>(function(){var p=document.querySelector('p.error')||document.querySelector('p.confirm');if(p){p.scrollIntoView()}})()</script>
+<script src="assets/highlight/js/highlight.pack.js?v=9.18.1"></script>
+<script>hljs.initHighlightingOnLoad()</script>
+<script src="assets/swipe/js/swipe.min.js?v=2.2.0"></script>
+<script>(function(){var e=document.querySelectorAll('.content-slider, .slider-control'),c,i;for(i=0;i<e.length;i+=2){c=e[i].getAttribute('data-config').split(',');new Swipe(e[i],{'auto':parseInt(c[0]),'speed':parseInt(c[1]),'startSlide':parseInt(c[2]),'continuous':parseInt(c[3]),'menu':e[i+1]})}})()</script>
+<script type="application/ld+json">{"@context":{"contao":"https:\/\/schema.contao.org\/"},"@type":"contao:Page","contao:title":"EPIC PLACES - Exclusive trips bookable as NFT","contao:pageId":2,"contao:noSearch":false,"contao:protected":false,"contao:groups":[],"contao:fePreview":false}</script>
+<script type="text/javascript" src="/files/intern/js/ka_fmd.js"></script>
+<script type="text/javascript" src="/files/intern/js/ka_video.js"></script>
+<!-- Matomo -->
+<script type="text/javascript">var _paq=window._paq||[];_paq.push(["disableCookies"]);_paq.push(['trackPageView']);_paq.push(['enableLinkTracking']);(function(){var u="//statistik.epic-places.com/";_paq.push(['setTrackerUrl',u+'matomo.php']);_paq.push(['setSiteId','1']);var d=document,g=d.createElement('script'),s=d.getElementsByTagName('script')[0];g.type='text/javascript';g.async=!0;g.defer=!0;g.src=u+'matomo.js';s.parentNode.insertBefore(g,s)})()</script>
+<!-- End Matomo Code -->
+</body>
+</html>
