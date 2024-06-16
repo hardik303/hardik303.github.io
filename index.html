@@ -1,151 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="utf-8">
-<title>Travelling Saturn</title>
-<base href="https://hardik303.github.io/">
-<meta name="robots" content="index,follow">
-<meta name="description" content="Exciting itineraries developed by Germany's leading content creators and influencers for the tourism industry. Find some of the most picturesque locations in the most epic places.">
-<meta name="generator" content="Contao Open Source CMS">
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
-<link rel="stylesheet" href="bundles/kafmdep/ka_fmdep.css?v=2b7fc7aa"><link rel="stylesheet" href="assets/css/layout.min.css,responsive.min.css,reset.min.css,mobile-menu.min....-c614fe1d.css"><script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script>window.jQuery||document.write('<script src="assets/jquery/js/jquery.min.js">\x3C/script>')</script>
-<script src="assets/js/mobile-menu.jquery.min.js-7605ba0e.js"></script>
-<!--[if lt IE 9]><script src="assets/html5shiv/js/html5shiv-printshiv.min.js"></script><![endif]-->
-<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
-integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
-crossorigin=""/>
-<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
-    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
-    crossorigin=""></script>
-<link rel="stylesheet" type="text/css" href="https://unpkg.com/swiper/swiper.min.css" />
+    <meta charset="utf-8">
+    <title>Travelling Saturn</title>
+    <base href="https://hardik303.github.io/">
+    <meta name="robots" content="index,follow">
+    <meta name="description"
+        content="Exciting itineraries developed by Germany's leading content creators and influencers for the tourism industry. Find some of the most picturesque locations in the most epic places.">
+    <meta name="generator" content="Contao Open Source CMS">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="bundles/kafmdep/ka_fmdep.css?v=2b7fc7aa">
+    <link rel="stylesheet"
+        href="assets/css/layout.min.css,responsive.min.css,reset.min.css,mobile-menu.min....-c614fe1d.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"
+        referrerpolicy="no-referrer"></script>
+    <script>window.jQuery || document.write('<script src="assets/jquery/js/jquery.min.js">\x3C/script>')</script>
+    <script src="assets/js/mobile-menu.jquery.min.js-7605ba0e.js"></script>
+    <!--[if lt IE 9]><script src="assets/html5shiv/js/html5shiv-printshiv.min.js"></script><![endif]-->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+        integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+        crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+        integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+        crossorigin=""></script>
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/swiper/swiper.min.css" />
 </head>
+
 <body id="top" class="mac chrome blink ch108 home" itemscope itemtype="http://schema.org/WebPage">
-<div id="wrapper">
-<header id="header">
-<div class="inside">
-<div id="HeaderLogo">
-<div class="image">
-<a href=""><img src="files/intern/header/fmd-epic-places-logo.svg" alt="Epic Places - Filmemacher Deutschland - FMD-Productions" /></a>
-</div>
-<div class="text">ENGINEER ON HIS JOURNEY THROUGH LIFE</div>
-</div>
-<div class="background"></div>
-<!-- indexer::stop -->
+    <div id="wrapper">
+        <header id="header">
+            <div class="inside">
+                <div id="HeaderLogo">
+                    <div class="image">
+                        <a href=""><img src="files/intern/header/fmd-epic-places-logo.svg"
+                                alt="Epic Places - Filmemacher Deutschland - FMD-Productions" /></a>
+                    </div>
+                    <div class="text">ENGINEER ON HIS JOURNEY THROUGH LIFE</div>
+                </div>
+                <div class="background"></div>
+                <!-- indexer::stop -->
 
-<!-- indexer::continue -->
-<!-- indexer::stop -->
-<div class="mod_mobile_menu block">
-<div id="mobile-menu-15-trigger" class="mobile_menu_trigger">
-<div id="navmobil"><i class="fa fa-bars" aria-hidden="true"></i><img src="files/intern/header/fmd-menu.svg" alt="Epic Places"/></div></div>
-<div id="mobile-menu-15" class="mobile_menu">
-<div class="inner">
-<!-- indexer::stop -->
-<nav class="mod_navigation block" id="mmenu" itemscope itemtype="http://schema.org/SiteNavigationElement">
-<a href="#skipNavigation14" class="invisible">Skip navigation</a>
+                <!-- indexer::continue -->
+                <!-- indexer::stop -->
+                <div class="mod_mobile_menu block">
+                    <div id="mobile-menu-15-trigger" class="mobile_menu_trigger">
+                        <div id="navmobil"><i class="fa fa-bars" aria-hidden="true"></i><img
+                                src="files/intern/header/fmd-menu.svg" alt="Epic Places" /></div>
+                    </div>
+                    <div id="mobile-menu-15" class="mobile_menu">
+                        <div class="inner">
+                            <!-- indexer::stop -->
+                            <nav class="mod_navigation block" id="mmenu" itemscope
+                                itemtype="http://schema.org/SiteNavigationElement">
+                                <a href="#skipNavigation14" class="invisible">Skip navigation</a>
 
-<!-- <li class="submenu sibling"><a href="epic-places.html" title="EPIC PLACES" class="submenu sibling" aria-haspopup="true" itemprop="url"><span itemprop="name">Epic Places</span></a> -->
-<ul class="level_1">
-<li class="japaniw"><a href="japan-in-winter.html" title="Travel Japan in Winter" class="japaniw" itemprop="url"><span itemprop="name">Japan in winter</span></a></li>
-<a id="skipNavigation14" class="invisible">&nbsp;</a>
-</nav>
-<!-- indexer::continue -->
-<!-- indexer::continue -->
-</div>
-</div>            </div>
-</header>
-<div id="banner">
-<div class="bannerinside">
-<div id="bannerimage">
-<div class="mod_article first last block" id="article-12">
-<!-- indexer::stop -->
-<div class="ce_player first last block">
-<figure class="video_container">
-<video playsinline  poster="files/image/Video/epic-places-intro-standbild.jpg" autoplay loop muted>
-<source type="video/mp4" src="files/image/Video/EPIC-Places-Header.mp4" title="EPIC-Places-Header.mp4">
-</video>
-</figure>
-</div>
-<!-- indexer::continue -->
-</div>
-</div>
-<div id="bannertext">
-<div class="textinside">
-</div>
-</div>
-<div id="bannersign">
-<div class="signinside">
-</div>
-</div>
-</div>
-</div>
-<div id="container">
-<main id="main">
-<div id="maininside" class="inside">
-<div id="anker"></div>
-<div class="mod_article first block" id="article-173">
-<!-- rsce_ka_startproject.html5 -->
-<section  class="ce_rsce_ka_startproject first startproject flexcontainer column center ce_rsce_ka_startproject first maxheight" style="background-image: url('')">
-<div class="clear"></div>
-<div class="headline">Engineer... Coding through the weekdays, Travelling through the weekends</div>
-<div class="text limit800"><p>An Engineer who is trying hard to find a work-travel balance. In search of new sources of serotonin and oxytocin. Currently helping adrenaline rush by adventuring throughout the world.</p></div>
+                                <!-- <li class="submenu sibling"><a href="epic-places.html" title="EPIC PLACES" class="submenu sibling" aria-haspopup="true" itemprop="url"><span itemprop="name">Epic Places</span></a> -->
+                                <ul class="level_1">
+                                    <li class="japaniw"><a href="japan-in-winter.html" title="Travel Japan in Winter"
+                                            class="japaniw" itemprop="url"><span itemprop="name">Japan in
+                                                winter</span></a></li>
+                                    <a id="skipNavigation14" class="invisible">&nbsp;</a>
+                            </nav>
+                            <!-- indexer::continue -->
+                            <!-- indexer::continue -->
+                        </div>
+                    </div>
+                </div>
+        </header>
+        <div id="banner">
+            <div class="bannerinside">
+                <div id="bannerimage">
+                    <div class="mod_article first last block" id="article-12">
+                        <!-- indexer::stop -->
+                        <div class="ce_player first last block">
+                            <figure class="video_container">
+                                <video playsinline poster="files/image/Video/epic-places-intro-standbild.jpg" autoplay
+                                    loop muted>
+                                    <source type="video/mp4" src="files/image/Video/EPIC-Places-Header.mp4"
+                                        title="EPIC-Places-Header.mp4">
+                                </video>
+                            </figure>
+                        </div>
+                        <!-- indexer::continue -->
+                    </div>
+                </div>
+                <div id="bannertext">
+                    <div class="textinside">
+                    </div>
+                </div>
+                <div id="bannersign">
+                    <div class="signinside">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="container">
+            <main id="main">
+                <div id="maininside" class="inside">
+                    <div id="anker"></div>
+                    <div class="mod_article first block" id="article-173">
+                        <!-- rsce_ka_startproject.html5 -->
+                        <section
+                            class="ce_rsce_ka_startproject first startproject flexcontainer column center ce_rsce_ka_startproject first maxheight"
+                            style="background-image: url('')">
+                            <div class="clear"></div>
+                            <div class="headline">Engineer... Coding through the weekdays, Travelling through the
+                                weekends</div>
+                            <div class="text limit800">
+                                <p>An Engineer who is trying hard to find a work-travel balance. In search of new
+                                    sources of serotonin and oxytocin. Currently helping adrenaline rush by adventuring
+                                    throughout the world.</p>
+                            </div>
 
-</section>
-<div class="dist100"></div>
-</div>
-<div class="mod_article block" id="article-239">
-<div class="ce_text center first block">
-<div class="ktext"><h1>Choose a destination</h1></div>
-</div>
-<div class="ce_fmdepmap last block">
-<div class="fmdepmap">
-<div class="fmdepmapinside">
-<div class="mapheader">
-</div>
-<div class="mapcanvas">
-<div id="mapid"></div>
-<div class="scripple scrippletop"><img src="/files/image/Skizzen/fmd-epic-places-map-scribble-1.svg" ></div>
-<div class="scripple scripplebottom"><img src="/files/image/Skizzen/fmd-epic-places-map-scribble-2.svg"></div>
-</div>
-<div class="mapfooter">
-</div>
-</div>
-</div>
-<script src='https://unpkg.com/@turf/turf@6.3.0/turf.min.js'></script>
-<script type="text/javascript">console.log('Script run');var strmapbg='25';var strmaplg='35';var strmapz='2';var maplink='null';var mapbg=parseFloat(strmapbg);var maplg=parseFloat(strmaplg);var mapz=parseFloat(strmapz);mapz=2.5;var flybg=mapbg;var flylg=maplg;var flyz=mapz;var lastflybg=0;var lastflylg=0;var actep=-1;var winwidth=window.innerWidth;var winheight=window.innerHeight;var mousex=null;var mousey=null;let scroll=this.scrollY;var scrollposy=scroll-$('.fmdepmap .mapheader').offset().top;var triplistendy=$('.fmdepmap .mapfooter').offset().top;var lastmousex=100;var lastmousey=100;var lastScrolledLeft=0;var lastScrolledTop=0;var chheader=$(".fmdepmap .mapheader").offset().top-0;var yoffset=350;var flytime=performance.now();var lastflytime=performance.now();console.log('Breitengrad: '+mapbg);console.log('Längengrad: '+maplg);console.log('Zoom: '+mapz);var mymap=L.map('mapid',{zoomControl:!0,zoomSnap:0.1,zoomDelta:0.2,'worldCopyJump':!0}).setView([mapbg,maplg],mapz);mymap.scrollWheelZoom.disable();L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}',{id:'greatbear30/ckm2201kwarcy17p6ro9ai5pp',minZoom:1,maxZoom:10,accessToken:'pk.eyJ1IjoiZ3JlYXRiZWFyMzAiLCJhIjoiY2trdTNoNHI3MHFnMTJwbG1sZWkwMmZxaSJ9.aKGhOWnpHpXX8I0IeyYK4w'}).addTo(mymap);var mapcenter=mymap.getCenter();var mapzoom=mymap.getZoom();var mapboundsw=mymap.getBounds().getSouthWest();var mapboundne=mymap.getBounds().getNorthEast();var mapsize=mymap.getSize();console.log('Real MapZoom: '+mapzoom);var mapwidth=Math.abs(mapboundsw.lng-mapboundne.lng);var mapoffset=0.25;var mapoffsetlng=-mapwidth*mapoffset;var pointoffsetlng=-mapwidth*mapoffset;var TooltipClass={'className':'class-tooltip'}
-var arrplace=JSON.parse('[{"i":0,"title":"Japan","bg":"43.11740960062793","lg":"143.0126994339393","url":"japan-in-winter.html","mz":null,"ip":"\/files\/intern\/worldmap\/Pin-Weltkarte.png","ips":"\/files\/intern\/worldmap\/Pin-Weltkarte.png","img":"files\/image\/trips\/japan2inwinter\/teaser\/FMD-Epic-Places-Teaser-Japan-In-Winter.jpg"}]');console.log(arrplace);var arrlatlngs=[];var arrlatlngsvisit=[];var arrmarker=[];var arrpopup=[];var markers=new L.FeatureGroup();var FMDMarker=L.Marker.extend({bindPopup:function(htmlContent,options){if(options&&options.showOnMouseOver){L.Marker.prototype.bindPopup.apply(this,[htmlContent,options]);this.on("mouseover",function(e){var target=e.originalEvent.fromElement||e.originalEvent.relatedTarget;var parent=this._getParent(target,"leaflet-popup");if(parent==this._popup._container)
-return!0;this.openPopup()},this);this.on("mouseout",function(e){var target=e.originalEvent.toElement||e.originalEvent.relatedTarget;if(this._getParent(target,"leaflet-popup")){L.DomEvent.on(this._popup._container,"mouseout",this._popupMouseOut,this);return!0}
-this.closePopup()},this)}},_popupMouseOut:function(e){L.DomEvent.off(this._popup,"mouseout",this._popupMouseOut,this);var target=e.toElement||e.relatedTarget;if(this._getParent(target,"leaflet-popup"))
-return!0;if(target==this._icon)
-return!0;this.closePopup()},_getParent:function(element,className){var parent=element.parentNode;while(parent!=null){if(parent.className&&L.DomUtil.hasClass(parent,className))
-return parent;parent=parent.parentNode}
-return!1},});var bglast=0.0;var lglast=0.0;console.log('Len arrEP '+arrplace.length);for(i=0;i<arrplace.length;i++){var bg=parseFloat(arrplace[i].bg);var lg=parseFloat(arrplace[i].lg);var id='ep_'+i;var epicplace=document.getElementById(id);console.log(arrplace[i].title+' '+bg+' '+lg+' '+arrplace[i].url);var latlng=L.latLng(bg,lg);var content='<div class="content"><img src="'+arrplace[i].img+'" /><div class="text">'+arrplace[i].title+'</div></div>'
-var popup=L.popup().setLatLng(latlng).setContent(content).openOn(mymap);var epurl=arrplace[i].url;var marker=new FMDMarker(latlng,epurl).bindTooltip(arrplace[i].title,{permanent:!0,direction:'right',offset:[15,0],opacity:1,className:'leaflet-tooltip-own',...TooltipClass},TooltipClass).on('click',markerOnClick);marker.bindPopup(popup,{maxWidth:'400',showOnMouseOver:!0});var epIcon=createIcon('/files/intern/worldmap/Punkt-2.png','/files/intern/worldmap/Punkt-2.png');marker.setIcon(epIcon);L.setOptions(marker,{'url':epurl});markers.addLayer(marker);bglast=bg;lglast=lg}
-mymap.addLayer(markers);mymap.closePopup();function markerOnClick(e){window.location=this.options.url}
-function createIcon(iconurl,shadowurl){var epIconTemp=L.divIcon({iconSize:[12,12],iconAnchor:[12,12],popupAnchor:[0,-35],className:'css-icon',html:'<div class="gps_ring"></div>'});return epIconTemp}
-function onMouseUpdate(e){mousex=e.pageX;mousey=e.pageY-$('.fmdepmap .mapcanvas').offset().top}
-window.addEventListener("load",function(event){});document.addEventListener('mousemove',onMouseUpdate,!1);document.addEventListener('mouseenter',onMouseUpdate,!1)</script>
-<script type="text/javascript">$(document).ready(function(){setPreviewPlayBtn();function setPreviewPlayBtn(){var videobtn=$('.headervideo .videobtn');videobtn.click(function(){var wwitem=$(this).parent();var plvideo=wwitem.find('video');var vsrc=videobtn.attr('type');plvideo.attr('src',vsrc);videobtn.addClass("disable");return!1})}})</script>
-</div>
-</div>
-<div class="mod_article block" id="article-174">
-<div class="boxheadline">
-<div class="flexcontainer">
-<H3 class="left">Explore</H3>
-<img src="files/intern/header/fmd-epic-places-logo.svg" alt="Epic Places by Filmemacher Deutschland"/>
-<H3 class="right">Visited</H3>
-</div>
-</div>
-<div class="ce_fmdeplist last block">
-<div class="limit2000">
-<!--
+                        </section>
+                        <div class="dist100"></div>
+                    </div>
+                    <div class="mod_article block" id="article-239">
+                        <div class="ce_text center first block">
+                            <div class="ktext">
+                                <h1>Choose a destination</h1>
+                            </div>
+                        </div>
+                        <div class="ce_fmdepmap last block">
+                            <div class="fmdepmap">
+                                <div class="fmdepmapinside">
+                                    <div class="mapheader">
+                                    </div>
+                                    <div class="mapcanvas">
+                                        <div id="mapid"></div>
+                                        <div class="scripple scrippletop"><img
+                                                src="/files/image/Skizzen/fmd-epic-places-map-scribble-1.svg"></div>
+                                        <div class="scripple scripplebottom"><img
+                                                src="/files/image/Skizzen/fmd-epic-places-map-scribble-2.svg"></div>
+                                    </div>
+                                    <div class="mapfooter">
+                                    </div>
+                                </div>
+                            </div>
+                            <script src='https://unpkg.com/@turf/turf@6.3.0/turf.min.js'></script>
+                            <script
+                                type="text/javascript">console.log('Script run'); var strmapbg = '25'; var strmaplg = '35'; var strmapz = '2'; var maplink = 'null'; var mapbg = parseFloat(strmapbg); var maplg = parseFloat(strmaplg); var mapz = parseFloat(strmapz); mapz = 2.5; var flybg = mapbg; var flylg = maplg; var flyz = mapz; var lastflybg = 0; var lastflylg = 0; var actep = -1; var winwidth = window.innerWidth; var winheight = window.innerHeight; var mousex = null; var mousey = null; let scroll = this.scrollY; var scrollposy = scroll - $('.fmdepmap .mapheader').offset().top; var triplistendy = $('.fmdepmap .mapfooter').offset().top; var lastmousex = 100; var lastmousey = 100; var lastScrolledLeft = 0; var lastScrolledTop = 0; var chheader = $(".fmdepmap .mapheader").offset().top - 0; var yoffset = 350; var flytime = performance.now(); var lastflytime = performance.now(); console.log('Breitengrad: ' + mapbg); console.log('Längengrad: ' + maplg); console.log('Zoom: ' + mapz); var mymap = L.map('mapid', { zoomControl: !0, zoomSnap: 0.1, zoomDelta: 0.2, 'worldCopyJump': !0 }).setView([mapbg, maplg], mapz); mymap.scrollWheelZoom.disable(); L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', { id: 'greatbear30/ckm2201kwarcy17p6ro9ai5pp', minZoom: 1, maxZoom: 10, accessToken: 'pk.eyJ1IjoiZ3JlYXRiZWFyMzAiLCJhIjoiY2trdTNoNHI3MHFnMTJwbG1sZWkwMmZxaSJ9.aKGhOWnpHpXX8I0IeyYK4w' }).addTo(mymap); var mapcenter = mymap.getCenter(); var mapzoom = mymap.getZoom(); var mapboundsw = mymap.getBounds().getSouthWest(); var mapboundne = mymap.getBounds().getNorthEast(); var mapsize = mymap.getSize(); console.log('Real MapZoom: ' + mapzoom); var mapwidth = Math.abs(mapboundsw.lng - mapboundne.lng); var mapoffset = 0.25; var mapoffsetlng = -mapwidth * mapoffset; var pointoffsetlng = -mapwidth * mapoffset; var TooltipClass = { 'className': 'class-tooltip' }
+                                    var arrplace = JSON.parse('[{"i":0,"title":"Japan","bg":"43.11740960062793","lg":"143.0126994339393","url":"japan-in-winter.html","mz":null,"ip":"\/files\/intern\/worldmap\/Pin-Weltkarte.png","ips":"\/files\/intern\/worldmap\/Pin-Weltkarte.png","img":"files\/image\/trips\/japan2inwinter\/teaser\/FMD-Epic-Places-Teaser-Japan-In-Winter.jpg"},{"i":1,"title":"Hong Kong","bg":"22.3193","lg":"114.1694","url":"japan-in-winter.html","mz":null,"ip":"\/files\/intern\/worldmap\/Pin-Weltkarte.png","ips":"\/files\/intern\/worldmap\/Pin-Weltkarte.png","img":"files\/image\/trips\/hongkong\/teaser\/FMD-Epic-Places-Teaser-Hong-Kong.jpg"},{"i":3,"title":"Vietnam","bg":"14.0583","lg":"108.2772","url":"japan-in-winter.html","mz":null,"ip":"\/files\/intern\/worldmap\/Pin-Weltkarte.png","ips":"\/files\/intern\/worldmap\/Pin-Weltkarte.png","img":"files\/image\/trips\/japan2inwinter\/teaser\/FMD-Epic-Places-Teaser-Japan-In-Winter.jpg"},{"i":4,"title":"Italy","bg":"41.8719","lg":"12.5674","url":"japan-in-winter.html","mz":null,"ip":"\/files\/intern\/worldmap\/Pin-Weltkarte.png","ips":"\/files\/intern\/worldmap\/Pin-Weltkarte.png","img":"files\/image\/trips\/japan2inwinter\/teaser\/FMD-Epic-Places-Teaser-Japan-In-Winter.jpg"},{"i":5,"title":"Spain","bg":"37.4637","lg":"-2.7492","url":"japan-in-winter.html","mz":null,"ip":"\/files\/intern\/worldmap\/Pin-Weltkarte.png","ips":"\/files\/intern\/worldmap\/Pin-Weltkarte.png","img":"files\/image\/trips\/japan2inwinter\/teaser\/FMD-Epic-Places-Teaser-Japan-In-Winter.jpg"},{"i":6,"title":"Kazakhstan","bg":"48.0196","lg":"66.9237","url":"japan-in-winter.html","mz":null,"ip":"\/files\/intern\/worldmap\/Pin-Weltkarte.png","ips":"\/files\/intern\/worldmap\/Pin-Weltkarte.png","img":"files\/image\/trips\/japan2inwinter\/teaser\/FMD-Epic-Places-Teaser-Japan-In-Winter.jpg"},{"i":7,"title":"Iceland","bg":"64.9631","lg":"-19.0208","url":"japan-in-winter.html","mz":null,"ip":"\/files\/intern\/worldmap\/Pin-Weltkarte.png","ips":"\/files\/intern\/worldmap\/Pin-Weltkarte.png","img":"files\/image\/trips\/japan2inwinter\/teaser\/FMD-Epic-Places-Teaser-Japan-In-Winter.jpg"},{"i":1,"title":"France","bg":"49.2276","lg":"4.2137","url":"japan-in-winter.html","mz":null,"ip":"\/files\/intern\/worldmap\/Pin-Weltkarte.png","ips":"\/files\/intern\/worldmap\/Pin-Weltkarte.png","img":"files\/image\/trips\/japan2inwinter\/teaser\/FMD-Epic-Places-Teaser-Japan-In-Winter.jpg"}]'); console.log(arrplace); var arrlatlngs = []; var arrlatlngsvisit = []; var arrmarker = []; var arrpopup = []; var markers = new L.FeatureGroup(); var FMDMarker = L.Marker.extend({
+                                        bindPopup: function (htmlContent, options) {
+                                            if (options && options.showOnMouseOver) {
+                                                L.Marker.prototype.bindPopup.apply(this, [htmlContent, options]); this.on("mouseover", function (e) {
+                                                    var target = e.originalEvent.fromElement || e.originalEvent.relatedTarget; var parent = this._getParent(target, "leaflet-popup"); if (parent == this._popup._container)
+                                                        return !0; this.openPopup()
+                                                }, this); this.on("mouseout", function (e) {
+                                                    var target = e.originalEvent.toElement || e.originalEvent.relatedTarget; if (this._getParent(target, "leaflet-popup")) { L.DomEvent.on(this._popup._container, "mouseout", this._popupMouseOut, this); return !0 }
+                                                    this.closePopup()
+                                                }, this)
+                                            }
+                                        }, _popupMouseOut: function (e) {
+                                            L.DomEvent.off(this._popup, "mouseout", this._popupMouseOut, this); var target = e.toElement || e.relatedTarget; if (this._getParent(target, "leaflet-popup"))
+                                                return !0; if (target == this._icon)
+                                                return !0; this.closePopup()
+                                        }, _getParent: function (element, className) {
+                                            var parent = element.parentNode; while (parent != null) {
+                                                if (parent.className && L.DomUtil.hasClass(parent, className))
+                                                    return parent; parent = parent.parentNode
+                                            }
+                                            return !1
+                                        },
+                                    }); var bglast = 0.0; var lglast = 0.0; console.log('Len arrEP ' + arrplace.length); for (i = 0; i < arrplace.length; i++) {
+                                        var bg = parseFloat(arrplace[i].bg); var lg = parseFloat(arrplace[i].lg); var id = 'ep_' + i; var epicplace = document.getElementById(id); console.log(arrplace[i].title + ' ' + bg + ' ' + lg + ' ' + arrplace[i].url); var latlng = L.latLng(bg, lg); var content = '<div class="content"><img src="' + arrplace[i].img + '" /><div class="text">' + arrplace[i].title + '</div></div>'
+                                        var popup = L.popup().setLatLng(latlng).setContent(content).openOn(mymap); var epurl = arrplace[i].url; var marker = new FMDMarker(latlng, epurl).bindTooltip(arrplace[i].title, { permanent: !0, direction: 'right', offset: [15, 0], opacity: 1, className: 'leaflet-tooltip-own', ...TooltipClass }, TooltipClass).on('click', markerOnClick); marker.bindPopup(popup, { maxWidth: '400', showOnMouseOver: !0 }); var epIcon = createIcon('/files/intern/worldmap/Punkt-2.png', '/files/intern/worldmap/Punkt-2.png'); marker.setIcon(epIcon); L.setOptions(marker, { 'url': epurl }); markers.addLayer(marker); bglast = bg; lglast = lg
+                                    }
+                                    mymap.addLayer(markers); mymap.closePopup(); function markerOnClick(e) { window.location = this.options.url }
+                                    function createIcon(iconurl, shadowurl) { var epIconTemp = L.divIcon({ iconSize: [12, 12], iconAnchor: [12, 12], popupAnchor: [0, -35], className: 'css-icon', html: '<div class="gps_ring"></div>' }); return epIconTemp }
+                                    function onMouseUpdate(e) { mousex = e.pageX; mousey = e.pageY - $('.fmdepmap .mapcanvas').offset().top }
+                                    window.addEventListener("load", function (event) { }); document.addEventListener('mousemove', onMouseUpdate, !1); document.addEventListener('mouseenter', onMouseUpdate, !1)</script>
+                            <script
+                                type="text/javascript">$(document).ready(function () { setPreviewPlayBtn(); function setPreviewPlayBtn() { var videobtn = $('.headervideo .videobtn'); videobtn.click(function () { var wwitem = $(this).parent(); var plvideo = wwitem.find('video'); var vsrc = videobtn.attr('type'); plvideo.attr('src', vsrc); videobtn.addClass("disable"); return !1 }) } })</script>
+                        </div>
+                    </div>
+                    <div class="mod_article block" id="article-174">
+                        <div class="boxheadline">
+                            <div class="flexcontainer">
+                                <H3 class="left">Explore</H3>
+                                <img src="files/intern/header/fmd-epic-places-logo.svg"
+                                    alt="Epic Places by Filmemacher Deutschland" />
+                                <H3 class="right">Visited</H3>
+                            </div>
+                        </div>
+                        <div class="ce_fmdeplist last block">
+                            <div class="limit2000">
+                                <!--
 <div>1598</div>
 <div>0</div>
 <div>rsts_default</div>
 -->
-<div class="fmdeplist">
-<div class="flexcontainer inline">
-<!-- <section class="epicplace ">
+                                <div class="fmdeplist">
+                                    <div class="flexcontainer inline">
+                                        <!-- <section class="epicplace ">
 <figure>
 <a href="japan.html">
 <img src="files/image/trips/japan1insummer/teaser/FMD-Epic-Places-Teaser-Japan-1.jpg" width="800" height="600" alt="" itemprop="image">
@@ -163,25 +212,34 @@ window.addEventListener("load",function(event){});document.addEventListener('mou
 <a href="japan.html">Explore</a>
 </div>
 </section> -->
-<section class="epicplace ">
-<figure>
-<a href="japan-in-winter.html">
-<img src="files/image/trips/japan2inwinter/teaser/FMD-Epic-Places-Teaser-Japan-In-Winter.jpg" width="800" height="600" alt="" itemprop="image">
-</a>
-<div class="kontinent">Japan / Asia</div>
-</figure>
-<div class="text">
-<div class="keywords">Culture Nature Sport</div>
-<div class="title">Travel Japan in January (20~30 Jan)</div>
-<div class="title2">冬に日本を旅行する</div>
-<div class="text1"><p>Japan in winter is unlike any other snowy destination you might have experienced before. Be prepared to get overwhelmed by nature - either while skiing in deep, fresh powder or while enjoying the hot springs Takaragawa. Discover the traditional production of Japanese Nikka whiskey and experience the fascinating Japanese culture in Edo Wonderland. We&#39;ll show you the best route through snowy Japan.</p></div>
-<div></div>
-</div>
-<div class="link">
-<a href="japan-in-winter.html">Explore</a>
-</div>
-</section>
-<!-- <section class="epicplace ">
+                                        <section class="epicplace ">
+                                            <figure>
+                                                <a href="japan-in-winter.html">
+                                                    <img src="files/image/trips/japan2inwinter/teaser/FMD-Epic-Places-Teaser-Japan-In-Winter.jpg"
+                                                        width="800" height="600" alt="" itemprop="image">
+                                                </a>
+                                                <div class="kontinent">Japan / Asia</div>
+                                            </figure>
+                                            <div class="text">
+                                                <div class="keywords">Culture Nature Sport</div>
+                                                <div class="title">Travel Japan in January (20~30 Jan)</div>
+                                                <div class="title2">冬に日本を旅行する</div>
+                                                <div class="text1">
+                                                    <p>Japan in winter is unlike any other snowy destination you might
+                                                        have experienced before. Be prepared to get overwhelmed by
+                                                        nature - either while skiing in deep, fresh powder or while
+                                                        enjoying the hot springs Takaragawa. Discover the traditional
+                                                        production of Japanese Nikka whiskey and experience the
+                                                        fascinating Japanese culture in Edo Wonderland. We&#39;ll show
+                                                        you the best route through snowy Japan.</p>
+                                                </div>
+                                                <div></div>
+                                            </div>
+                                            <div class="link">
+                                                <a href="japan-in-winter.html">Explore</a>
+                                            </div>
+                                        </section>
+                                        <!-- <section class="epicplace ">
 <figure>
 <a href="utah.html">
 <img src="files/image/trips/utah1/teaser/FMD-Epic-Places-Teaser-Utah-01.jpg" width="800" height="600" alt="" itemprop="image">
@@ -255,21 +313,23 @@ window.addEventListener("load",function(event){});document.addEventListener('mou
 <a href="uganda.html">Explore</a>
 </div>
 </section> -->
-<section class="epicplace empty"></section>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="mod_article boxwhite last block" id="article-13">
-<div class="dist100"></div>
-<h5 class="ce_headline limit1200 center">
-The Engineer - who is </h5>
-<div class="ce_text limit1000 center bigtext block">
-<div class="ktext"><h1>Inspired by Travel. Driven by results. Looking for Thrill and BEING ALIVE!.</h1>
-<p>&nbsp;</p></div>
-</div>
-<!-- <div class="dist30"></div>
+                                        <section class="epicplace empty"></section>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mod_article boxwhite last block" id="article-13">
+                        <div class="dist100"></div>
+                        <h5 class="ce_headline limit1200 center">
+                            The Engineer - who is </h5>
+                        <div class="ce_text limit1000 center bigtext block">
+                            <div class="ktext">
+                                <h1>Inspired by Travel. Driven by results. Looking for Thrill and BEING ALIVE!.</h1>
+                                <p>&nbsp;</p>
+                            </div>
+                        </div>
+                        <!-- <div class="dist30"></div>
 <div class="ce_text center limit1000 bigtext block">
 <div class="ktext"><p>FMD produces videos and photos with both passion and professionalism. Whether it’s for specific jobs or entire marketing campaigns, for social media or even TV and cinema, whether it’s to the requirements given to us by the customer or concepts that are completely our own. We realize spectacular events and campaigns at exotic destinations all over the world and turn simple productions into fully-fledged media events.</p>
 <p><a title="Visit our website" href="https://fmd-productions.com" target="_blank" rel="noopener">Visit fmd-productions.com</a></p></div>
@@ -285,19 +345,20 @@ The Engineer - who is </h5>
 <div class="dist50"></div>
 </div>
 </div> -->
-</main>
-</div>
+            </main>
+        </div>
 
-<!-- indexer::stop -->
-<!-- indexer::stop -->
-<!-- indexer::continue -->
-<!-- indexer::stop -->
-<!-- indexer::continue -->
-</div>            	</div>
-</div>
-</footer>
-</div>
-<!-- <script src="assets/jquery-ui/js/jquery-ui.min.js?v=1.13.1"></script>
+        <!-- indexer::stop -->
+        <!-- indexer::stop -->
+        <!-- indexer::continue -->
+        <!-- indexer::stop -->
+        <!-- indexer::continue -->
+    </div>
+    </div>
+    </div>
+    </footer>
+    </div>
+    <!-- <script src="assets/jquery-ui/js/jquery-ui.min.js?v=1.13.1"></script>
 <script>jQuery(function($){$(document).accordion({heightStyle:'content',header:'.toggler',collapsible:!0,create:function(event,ui){ui.header.addClass('active');$('.toggler').attr('tabindex',0)},activate:function(event,ui){ui.newHeader.addClass('active');ui.oldHeader.removeClass('active');$('.toggler').attr('tabindex',0)}})})</script>
 <script src="assets/colorbox/js/colorbox.min.js?v=1.6.6"></script>
 <script>jQuery(function($){$('a[data-lightbox]').map(function(){$(this).colorbox({loop:!1,rel:$(this).attr('data-lightbox'),maxWidth:'95%',maxHeight:'95%',width:'95%',height:'95%'})})})</script>
@@ -314,7 +375,10 @@ $(table).tablesorter(opts)})})</script>
 <script type="text/javascript" src="/files/intern/js/ka_fmd.js"></script>
 <script type="text/javascript" src="/files/intern/js/ka_video.js"></script>
 <!-- Matomo -->
-<script type="text/javascript">var _paq=window._paq||[];_paq.push(["disableCookies"]);_paq.push(['trackPageView']);_paq.push(['enableLinkTracking']);(function(){var u="//statistik.epic-places.com/";_paq.push(['setTrackerUrl',u+'matomo.php']);_paq.push(['setSiteId','1']);var d=document,g=d.createElement('script'),s=d.getElementsByTagName('script')[0];g.type='text/javascript';g.async=!0;g.defer=!0;g.src=u+'matomo.js';s.parentNode.insertBefore(g,s)})()</script> -->
-<!-- End Matomo Code -->
+    <script
+        type="text/javascript">var _paq = window._paq || []; _paq.push(["disableCookies"]); _paq.push(['trackPageView']); _paq.push(['enableLinkTracking']); (function () { var u = "//statistik.epic-places.com/"; _paq.push(['setTrackerUrl', u + 'matomo.php']); _paq.push(['setSiteId', '1']); var d = document, g = d.createElement('script'), s = d.getElementsByTagName('script')[0]; g.type = 'text/javascript'; g.async = !0; g.defer = !0; g.src = u + 'matomo.js'; s.parentNode.insertBefore(g, s) })()</script>
+    -->
+    <!-- End Matomo Code -->
 </body>
+
 </html>
